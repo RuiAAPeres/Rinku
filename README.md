@@ -9,7 +9,7 @@ The purpose of Rinku ("link" in japanese) is to allow the user to established a 
 
 ## Usage
 
-The most basic case would be with a GET:
+The most basic case would be with a `GET`:
 
 ```swift
 Rinku.get("http://myservice.com/").withCompletion({completion in
