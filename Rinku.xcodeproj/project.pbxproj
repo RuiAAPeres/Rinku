@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C75B6262194A56E6000B2129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B6261194A56E6000B2129 /* AppDelegate.swift */; };
+		C75B6264194A56E6000B2129 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75B6263194A56E6000B2129 /* Images.xcassets */; };
+		C75B6270194A56E7000B2129 /* RinkuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B626F194A56E7000B2129 /* RinkuTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C75B626A194A56E7000B2129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C75B6254194A56E6000B2129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C75B625B194A56E6000B2129;
+			remoteInfo = Rinku;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C75B625C194A56E6000B2129 /* Rinku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rinku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75B6260194A56E6000B2129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C75B6261194A56E6000B2129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C75B6263194A56E6000B2129 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C75B6269194A56E7000B2129 /* RinkuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RinkuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75B626E194A56E7000B2129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C75B626F194A56E7000B2129 /* RinkuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RinkuTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C75B6259194A56E6000B2129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75B6266194A56E7000B2129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C75B6253194A56E6000B2129 = {
+			isa = PBXGroup;
+			children = (
+				C75B625E194A56E6000B2129 /* Rinku */,
+				C75B626C194A56E7000B2129 /* RinkuTests */,
+				C75B625D194A56E6000B2129 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C75B625D194A56E6000B2129 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C75B625C194A56E6000B2129 /* Rinku.app */,
+				C75B6269194A56E7000B2129 /* RinkuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C75B625E194A56E6000B2129 /* Rinku */ = {
+			isa = PBXGroup;
+			children = (
+				C75B6261194A56E6000B2129 /* AppDelegate.swift */,
+				C75B6263194A56E6000B2129 /* Images.xcassets */,
+				C75B625F194A56E6000B2129 /* Supporting Files */,
+			);
+			path = Rinku;
+			sourceTree = "<group>";
+		};
+		C75B625F194A56E6000B2129 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C75B6260194A56E6000B2129 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C75B626C194A56E7000B2129 /* RinkuTests */ = {
+			isa = PBXGroup;
+			children = (
+				C75B626F194A56E7000B2129 /* RinkuTests.swift */,
+				C75B626D194A56E7000B2129 /* Supporting Files */,
+			);
+			path = RinkuTests;
+			sourceTree = "<group>";
+		};
+		C75B626D194A56E7000B2129 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C75B626E194A56E7000B2129 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C75B625B194A56E6000B2129 /* Rinku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C75B6273194A56E7000B2129 /* Build configuration list for PBXNativeTarget "Rinku" */;
+			buildPhases = (
+				C75B6258194A56E6000B2129 /* Sources */,
+				C75B6259194A56E6000B2129 /* Frameworks */,
+				C75B625A194A56E6000B2129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rinku;
+			productName = Rinku;
+			productReference = C75B625C194A56E6000B2129 /* Rinku.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C75B6268194A56E7000B2129 /* RinkuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C75B6276194A56E7000B2129 /* Build configuration list for PBXNativeTarget "RinkuTests" */;
+			buildPhases = (
+				C75B6265194A56E7000B2129 /* Sources */,
+				C75B6266194A56E7000B2129 /* Frameworks */,
+				C75B6267194A56E7000B2129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C75B626B194A56E7000B2129 /* PBXTargetDependency */,
+			);
+			name = RinkuTests;
+			productName = RinkuTests;
+			productReference = C75B6269194A56E7000B2129 /* RinkuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C75B6254194A56E6000B2129 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Aphely;
+				TargetAttributes = {
+					C75B625B194A56E6000B2129 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					C75B6268194A56E7000B2129 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = C75B625B194A56E6000B2129;
+					};
+				};
+			};
+			buildConfigurationList = C75B6257194A56E6000B2129 /* Build configuration list for PBXProject "Rinku" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C75B6253194A56E6000B2129;
+			productRefGroup = C75B625D194A56E6000B2129 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C75B625B194A56E6000B2129 /* Rinku */,
+				C75B6268194A56E7000B2129 /* RinkuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C75B625A194A56E6000B2129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75B6264194A56E6000B2129 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75B6267194A56E7000B2129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C75B6258194A56E6000B2129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75B6262194A56E6000B2129 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75B6265194A56E7000B2129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75B6270194A56E7000B2129 /* RinkuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C75B626B194A56E7000B2129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C75B625B194A56E6000B2129 /* Rinku */;
+			targetProxy = C75B626A194A56E7000B2129 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C75B6271194A56E7000B2129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C75B6272194A56E7000B2129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C75B6274194A56E7000B2129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Rinku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C75B6275194A56E7000B2129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Rinku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C75B6277194A56E7000B2129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rinku.app/Rinku";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RinkuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		C75B6278194A56E7000B2129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rinku.app/Rinku";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RinkuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C75B6257194A56E6000B2129 /* Build configuration list for PBXProject "Rinku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C75B6271194A56E7000B2129 /* Debug */,
+				C75B6272194A56E7000B2129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C75B6273194A56E7000B2129 /* Build configuration list for PBXNativeTarget "Rinku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C75B6274194A56E7000B2129 /* Debug */,
+				C75B6275194A56E7000B2129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C75B6276194A56E7000B2129 /* Build configuration list for PBXNativeTarget "RinkuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C75B6277194A56E7000B2129 /* Debug */,
+				C75B6278194A56E7000B2129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C75B6254194A56E6000B2129 /* Project object */;
+}
