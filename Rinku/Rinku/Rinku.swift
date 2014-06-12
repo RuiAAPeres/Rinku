@@ -50,8 +50,7 @@ class Rinku {
         return self
     }
 
-    func withCompletion(completion : (NSURLResponse!, NSData!, NSError!) -> ()) -> () {
-        NSURLConnection.sendAsynchronousRequest(self.request, queue:
-            NSOperationQueue(), completionHandler: completion)
+    func withCompletion(completion : (NSData!, NSURLResponse!, NSError!) -> ()) -> () {
+        NSURLSession.sharedSession().dataTaskWithRequest(self.request, completionHandler: completion).resume()
     }
 }

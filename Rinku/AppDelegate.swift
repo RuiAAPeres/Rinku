@@ -18,10 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
        var rinku = Rinku.get("http://upload.wikimedia.org/wikipedia/commons/5/5b/Ultraviolet_image_of_the_Cygnus_Loop_Nebula_crop.jpg")
         
-        rinku.withCompletion({ (completion: (NSURLResponse!, NSData!, NSError!)) -> () in
-            println(completion.0)
-            println(completion.1)
-            println(completion.2)
+        Rinku.get("http://myservice.com/").withCompletion({completion in
+            
+        })
+        
+        var image : NSData
+        
+        Rinku.post("http://myservice.com/").withBody(image).withCompletion({completion in
+            
         })
         
         return true
