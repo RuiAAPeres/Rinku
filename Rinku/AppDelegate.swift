@@ -15,10 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        // Override point for customization after application launch.
-        self.window!.backgroundColor = UIColor.whiteColor()
-        self.window!.makeKeyAndVisible()
+
+       var rinku = Rinku.get("http://upload.wikimedia.org/wikipedia/commons/5/5b/Ultraviolet_image_of_the_Cygnus_Loop_Nebula_crop.jpg")
+        
+        rinku.withCompletion({ (completion: (NSURLResponse!, NSData!, NSError!)) -> () in
+            println(completion.0)
+            println(completion.1)
+            println(completion.2)
+        })
+        
         return true
     }
 

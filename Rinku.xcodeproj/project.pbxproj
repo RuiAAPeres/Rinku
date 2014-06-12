@@ -10,6 +10,7 @@
 		C75B6262194A56E6000B2129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B6261194A56E6000B2129 /* AppDelegate.swift */; };
 		C75B6264194A56E6000B2129 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75B6263194A56E6000B2129 /* Images.xcassets */; };
 		C75B6270194A56E7000B2129 /* RinkuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B626F194A56E7000B2129 /* RinkuTests.swift */; };
+		C75B627B194A577F000B2129 /* Rinku.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B627A194A577F000B2129 /* Rinku.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,7 @@
 		C75B6269194A56E7000B2129 /* RinkuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RinkuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75B626E194A56E7000B2129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C75B626F194A56E7000B2129 /* RinkuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RinkuTests.swift; sourceTree = "<group>"; };
+		C75B627A194A577F000B2129 /* Rinku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rinku.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		C75B625E194A56E6000B2129 /* Rinku */ = {
 			isa = PBXGroup;
 			children = (
+				C75B6279194A5765000B2129 /* Rinku */,
 				C75B6261194A56E6000B2129 /* AppDelegate.swift */,
 				C75B6263194A56E6000B2129 /* Images.xcassets */,
 				C75B625F194A56E6000B2129 /* Supporting Files */,
@@ -101,6 +104,14 @@
 				C75B626E194A56E7000B2129 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C75B6279194A5765000B2129 /* Rinku */ = {
+			isa = PBXGroup;
+			children = (
+				C75B627A194A577F000B2129 /* Rinku.swift */,
+			);
+			path = Rinku;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C75B6262194A56E6000B2129 /* AppDelegate.swift in Sources */,
+				C75B627B194A577F000B2129 /* Rinku.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
