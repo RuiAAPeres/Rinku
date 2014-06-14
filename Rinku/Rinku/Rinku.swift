@@ -49,6 +49,10 @@ class Rinku {
     }
 
     func completion(completion : (NSData!, NSURLResponse!, NSError!) -> ()) -> () {
-        NSURLSession.sharedSession().dataTaskWithRequest(self.request, completionHandler: completion).resume()
+        
+        var session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration(), delegate: nil
+            , delegateQueue: NSOperationQueue.mainQueue())
+        
+       session.dataTaskWithRequest(self.request, completionHandler: completion).resume()
     }
 }
