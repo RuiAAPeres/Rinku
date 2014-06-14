@@ -13,18 +13,16 @@ let RinkuGet : String = "GET"
 
 class Rinku {
     
-    var httpBody : NSData!
     let request : NSMutableURLRequest
-    
-    
+        
     init(httpMethod: String, endpointURL : String, httpHeaders : Dictionary<String, String>?) {
         
         let url = NSURL(string: endpointURL)
-        self.request =  NSMutableURLRequest(URL: url)
-        self.request.HTTPMethod = httpMethod
+        request =  NSMutableURLRequest(URL: url)
+        request.HTTPMethod = httpMethod
         
         if let httpHeadersUnWrapped = httpHeaders {
-            self.request.allHTTPHeaderFields = httpHeadersUnWrapped
+            request.allHTTPHeaderFields = httpHeadersUnWrapped
         }
     }
     
@@ -40,17 +38,17 @@ class Rinku {
     
     // Instance Methods
     
-    func withHeaders(headers : Dictionary<String,String>) -> Rinku {
-        self.request.allHTTPHeaderFields = headers
+    func headers(headers : Dictionary<String,String>) -> Rinku {
+        request.allHTTPHeaderFields = headers
         return self
     }
     
-    func withBody(httpBody : NSData) -> Rinku {
-        self.request.HTTPBody = httpBody
+    func body(httpBody : NSData) -> Rinku {
+        request.HTTPBody = httpBody
         return self
     }
 
-    func withCompletion(completion : (NSData!, NSURLResponse!, NSError!) -> ()) -> () {
+    func completion(completion : (NSData!, NSURLResponse!, NSError!) -> ()) -> () {
         NSURLSession.sharedSession().dataTaskWithRequest(self.request, completionHandler: completion).resume()
     }
 }
