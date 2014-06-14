@@ -12,7 +12,7 @@ The purpose of Rinku ("link" in japanese) is to allow the user to established a 
 The most basic case would be with a `GET`:
 
 ```swift
-Rinku.get("http://myservice.com/").withCompletion({completion in
+Rinku.get("http://myservice.com/").completion({completion in
 
 })
 ```
@@ -20,7 +20,7 @@ Rinku.get("http://myservice.com/").withCompletion({completion in
 The `completion` parameter is a tuple `(NSData!, NSURLResponse!, NSError!)`. You can as well `POST` data:
 
 ```swift
-Rinku.post("http://myservice.com/").withBody(image).withCompletion({completion in
+Rinku.post("http://myservice.com/").body(image).completion({completion in
 
 })
 ```
