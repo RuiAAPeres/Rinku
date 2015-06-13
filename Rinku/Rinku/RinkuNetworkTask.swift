@@ -10,13 +10,13 @@ import Foundation
 
 public typealias CompletionHandler = NSData -> ()
 public typealias ProgressHandler = Double -> ()
-public typealias FailureHandler = (Int, NSError?, NSData?) -> ()
+public typealias FailureHandler = (Int, NSError?, NSData) -> ()
 
 
-struct RinkuNetworkTask : Equatable {
+struct RinkuNetworkTask : Hashable {
     
     let request : NSURLRequest
-    var data : NSData
+    var data : NSMutableData = NSMutableData()
     
     private var progressHandlers : [ProgressHandler] = []
     private var failureHandlers : [FailureHandler] = []
@@ -40,7 +40,7 @@ struct RinkuNetworkTask : Equatable {
         }
     }
     
-    func applyFailureHandlers(statusCode: Int, error: NSError?, data: NSData?) -> () {
+    func applyFailureHandlers(statusCode: Int, error: NSError?) -> () {
         for handler in failureHandlers {
             handler(statusCode, error, data)
         }
@@ -50,6 +50,10 @@ struct RinkuNetworkTask : Equatable {
         for handler in progressHandlers {
             handler(progress)
         }
+    }
+    
+    var hashValue: Int {
+        return (request.URL?.hashValue)!
     }
 }
 
