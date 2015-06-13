@@ -10,10 +10,9 @@
 		B2D8A5791B2BAB4500AB5B17 /* Rinku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D8A56F1B2BAB4500AB5B17 /* Rinku.framework */; };
 		B2D8A58D1B2BAC3F00AB5B17 /* RinkuResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5891B2BAC3F00AB5B17 /* RinkuResource.swift */; };
 		B2D8A58E1B2BAC3F00AB5B17 /* RinkuHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D8A58A1B2BAC3F00AB5B17 /* RinkuHeader.h */; };
-		B2D8A5941B2BACE400AB5B17 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5931B2BACE400AB5B17 /* Method.swift */; };
 		B2D8A5961B2BB36C00AB5B17 /* RinkuNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5951B2BB36C00AB5B17 /* RinkuNetworkTask.swift */; };
 		B2D8A59E1B2BC7D400AB5B17 /* RinkuSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A59D1B2BC7D400AB5B17 /* RinkuSession.swift */; };
-		B2D8A5A21B2BFFB300AB5B17 /* RinkuResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5A11B2BFFB300AB5B17 /* RinkuResource.swift */; };
+		B2D8A5A21B2BFFB300AB5B17 /* RinkuResourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5A11B2BFFB300AB5B17 /* RinkuResourceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +32,9 @@
 		B2D8A58A1B2BAC3F00AB5B17 /* RinkuHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RinkuHeader.h; sourceTree = "<group>"; };
 		B2D8A58C1B2BAC3F00AB5B17 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2D8A5911B2BACB200AB5B17 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2D8A5931B2BACE400AB5B17 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		B2D8A5951B2BB36C00AB5B17 /* RinkuNetworkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuNetworkTask.swift; sourceTree = "<group>"; };
 		B2D8A59D1B2BC7D400AB5B17 /* RinkuSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuSession.swift; sourceTree = "<group>"; };
-		B2D8A5A11B2BFFB300AB5B17 /* RinkuResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuResource.swift; sourceTree = "<group>"; };
+		B2D8A5A11B2BFFB300AB5B17 /* RinkuResourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuResourceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +69,7 @@
 		B2D8A57C1B2BAB4500AB5B17 /* RinkuTests */ = {
 			isa = PBXGroup;
 			children = (
-				B2D8A5A11B2BFFB300AB5B17 /* RinkuResource.swift */,
+				B2D8A5A11B2BFFB300AB5B17 /* RinkuResourceTests.swift */,
 				B2D8A5901B2BACB200AB5B17 /* Supporting Files */,
 			);
 			path = RinkuTests;
@@ -83,7 +81,6 @@
 				B2D8A5891B2BAC3F00AB5B17 /* RinkuResource.swift */,
 				B2D8A5951B2BB36C00AB5B17 /* RinkuNetworkTask.swift */,
 				B2D8A59D1B2BC7D400AB5B17 /* RinkuSession.swift */,
-				B2D8A5931B2BACE400AB5B17 /* Method.swift */,
 			);
 			path = Rinku;
 			sourceTree = "<group>";
@@ -230,7 +227,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D8A5941B2BACE400AB5B17 /* Method.swift in Sources */,
 				B2D8A5961B2BB36C00AB5B17 /* RinkuNetworkTask.swift in Sources */,
 				B2D8A59E1B2BC7D400AB5B17 /* RinkuSession.swift in Sources */,
 				B2D8A58D1B2BAC3F00AB5B17 /* RinkuResource.swift in Sources */,
@@ -241,7 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D8A5A21B2BFFB300AB5B17 /* RinkuResource.swift in Sources */,
+				B2D8A5A21B2BFFB300AB5B17 /* RinkuResourceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

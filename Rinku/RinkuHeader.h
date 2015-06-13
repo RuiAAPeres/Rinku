@@ -15,6 +15,3 @@ FOUNDATION_EXPORT double RinkuVersionNumber;
 FOUNDATION_EXPORT const unsigned char RinkuVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Rinku/PublicHeader.h>
-
-#import <Rinku/RinkuResource.swift>
-#import <Rinku/RinkuSession.swift>

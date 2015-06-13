@@ -16,14 +16,7 @@ public struct RinkuResource : Equatable, CustomStringConvertible {
     let method : Method
     let body : NSData?
     let header : Header?
-    
-    public init(path : String, method : Method, body : NSData?, header : Header?) {
-        self.path = path
-        self.method = method
-        self.body = body
-        self.header = header
-    }
-    
+        
     public var description : String {
         return "Path:\(path)\nMethod:\(method.rawValue)\n"
     }
@@ -41,4 +34,16 @@ public func == (lhs: RinkuResource, rhs: RinkuResource) -> Bool {
     }
     
     return (lhs.path == rhs.path && lhs.method == rhs.method && equalBody)
+}
+
+public enum Method: String { // Stolen from chriseidhof/github-issues 😅
+    case OPTIONS = "OPTIONS"
+    case GET = "GET"
+    case HEAD = "HEAD"
+    case POST = "POST"
+    case PUT = "PUT"
+    case PATCH = "PATCH"
+    case DELETE = "DELETE"
+    case TRACE = "TRACE"
+    case CONNECT = "CONNECT"
 }
