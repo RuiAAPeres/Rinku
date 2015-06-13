@@ -20,6 +20,10 @@ public class RinkuSession : NSObject,  NSURLSessionDataDelegate {
         self.session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration(), delegate: self, delegateQueue: nil)
     }
     
+    deinit {
+        session.invalidateAndCancel()
+    }
+    
     public func makeRequest(request : NSURLRequest, completion : CompletionHandler, failure : FailureHandler, progress : ProgressHandler = {double in }) -> () {
         
         var task = self.taskForRequest(request)
@@ -33,6 +37,19 @@ public class RinkuSession : NSObject,  NSURLSessionDataDelegate {
         task.addProgressHandler(progress)
         
         self.tasks.insert(task)
+        session.dataTaskWithRequest(request)?.resume()
+    }
+    
+    public func cancelAll() {
+        session.getAllTasksWithCompletionHandler { tasks in
+            self.cancelTasks(tasks)
+        }
+    }
+    
+    public func cancelRequest(request : NSURLRequest) {
+        session.getAllTasksWithCompletionHandler { tasks in
+            self.cancelTasks(tasks.filter { task in task.originalRequest == request })
+        }
     }
     
     public func URLSession(session: NSURLSession, dataTask: NSURLSessionDataTask, didReceiveData data: NSData) {
@@ -68,8 +85,14 @@ public class RinkuSession : NSObject,  NSURLSessionDataDelegate {
         return tasks.filter { task in task.request == request }.first
     }
     
-    func removeTask(task: RinkuNetworkTask) {
+    private func removeTask(task: RinkuNetworkTask) {
         tasks.remove(task)
+    }
+    
+    private func cancelTasks(tasks : [NSURLSessionTask]) -> () {
+        for task in tasks {
+            task.cancel()
+        }
     }
 
 }
