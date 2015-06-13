@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum Method: String { // Bluntly stolen from github-issues which was stolen from Alamofire
+public enum Method: String { // Stolen from chriseidhof/github-issues
     case OPTIONS = "OPTIONS"
     case GET = "GET"
     case HEAD = "HEAD"

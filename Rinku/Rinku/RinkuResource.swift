@@ -15,7 +15,7 @@ public struct RinkuResource : Equatable, CustomStringConvertible {
     let path : String
     let method : Method
     let body : NSData?
-    let header : Header
+    let header : Header?
     
     public var description : String {
         return "Path:\(path)\nMethod:\(method.rawValue)\n"
