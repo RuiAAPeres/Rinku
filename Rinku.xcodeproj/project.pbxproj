@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B2D8A5791B2BAB4500AB5B17 /* Rinku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D8A56F1B2BAB4500AB5B17 /* Rinku.framework */; };
-		B2D8A58D1B2BAC3F00AB5B17 /* Rinku.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5891B2BAC3F00AB5B17 /* Rinku.swift */; };
-		B2D8A58E1B2BAC3F00AB5B17 /* Rinku.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D8A58A1B2BAC3F00AB5B17 /* Rinku.h */; };
-		B2D8A5941B2BACE400AB5B17 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5931B2BACE400AB5B17 /* HTTPMethod.swift */; };
+		B2D8A58D1B2BAC3F00AB5B17 /* RinkuResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5891B2BAC3F00AB5B17 /* RinkuResource.swift */; };
+		B2D8A58E1B2BAC3F00AB5B17 /* RinkuHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D8A58A1B2BAC3F00AB5B17 /* RinkuHeader.h */; };
+		B2D8A5941B2BACE400AB5B17 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5931B2BACE400AB5B17 /* Method.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,11 +26,11 @@
 /* Begin PBXFileReference section */
 		B2D8A56F1B2BAB4500AB5B17 /* Rinku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rinku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D8A5781B2BAB4500AB5B17 /* RinkuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RinkuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2D8A5891B2BAC3F00AB5B17 /* Rinku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rinku.swift; sourceTree = "<group>"; };
-		B2D8A58A1B2BAC3F00AB5B17 /* Rinku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rinku.h; sourceTree = "<group>"; };
+		B2D8A5891B2BAC3F00AB5B17 /* RinkuResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuResource.swift; sourceTree = "<group>"; };
+		B2D8A58A1B2BAC3F00AB5B17 /* RinkuHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RinkuHeader.h; sourceTree = "<group>"; };
 		B2D8A58C1B2BAC3F00AB5B17 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2D8A5911B2BACB200AB5B17 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2D8A5931B2BACE400AB5B17 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		B2D8A5931B2BACE400AB5B17 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 		B2D8A5701B2BAB4500AB5B17 /* Rinku */ = {
 			isa = PBXGroup;
 			children = (
-				B2D8A58A1B2BAC3F00AB5B17 /* Rinku.h */,
+				B2D8A58A1B2BAC3F00AB5B17 /* RinkuHeader.h */,
 				B2D8A5881B2BAC3F00AB5B17 /* Rinku */,
 				B2D8A58B1B2BAC3F00AB5B17 /* Supporting Files */,
 			);
@@ -73,8 +73,8 @@
 		B2D8A5881B2BAC3F00AB5B17 /* Rinku */ = {
 			isa = PBXGroup;
 			children = (
-				B2D8A5891B2BAC3F00AB5B17 /* Rinku.swift */,
-				B2D8A5931B2BACE400AB5B17 /* HTTPMethod.swift */,
+				B2D8A5891B2BAC3F00AB5B17 /* RinkuResource.swift */,
+				B2D8A5931B2BACE400AB5B17 /* Method.swift */,
 			);
 			path = Rinku;
 			sourceTree = "<group>";
@@ -120,7 +120,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D8A58E1B2BAC3F00AB5B17 /* Rinku.h in Headers */,
+				B2D8A58E1B2BAC3F00AB5B17 /* RinkuHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,8 +221,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D8A5941B2BACE400AB5B17 /* HTTPMethod.swift in Sources */,
-				B2D8A58D1B2BAC3F00AB5B17 /* Rinku.swift in Sources */,
+				B2D8A5941B2BACE400AB5B17 /* Method.swift in Sources */,
+				B2D8A58D1B2BAC3F00AB5B17 /* RinkuResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

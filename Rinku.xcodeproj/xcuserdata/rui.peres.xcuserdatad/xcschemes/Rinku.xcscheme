@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B2D8A5521B2BAAAB00AB5B17"
-               BuildableName = "RInku.framework"
-               BlueprintName = "RInku"
+               BlueprintIdentifier = "B2D8A56E1B2BAB4500AB5B17"
+               BuildableName = "Rinku.framework"
+               BlueprintName = "Rinku"
                ReferencedContainer = "container:Rinku.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B2D8A55B1B2BAAAB00AB5B17"
-               BuildableName = "RInkuTests.xctest"
-               BlueprintName = "RInkuTests"
+               BlueprintIdentifier = "B2D8A5771B2BAB4500AB5B17"
+               BuildableName = "RinkuTests.xctest"
+               BlueprintName = "RinkuTests"
                ReferencedContainer = "container:Rinku.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B2D8A5521B2BAAAB00AB5B17"
-            BuildableName = "RInku.framework"
-            BlueprintName = "RInku"
+            BlueprintIdentifier = "B2D8A56E1B2BAB4500AB5B17"
+            BuildableName = "Rinku.framework"
+            BlueprintName = "Rinku"
             ReferencedContainer = "container:Rinku.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B2D8A5521B2BAAAB00AB5B17"
-            BuildableName = "RInku.framework"
-            BlueprintName = "RInku"
+            BlueprintIdentifier = "B2D8A56E1B2BAB4500AB5B17"
+            BuildableName = "Rinku.framework"
+            BlueprintName = "Rinku"
             ReferencedContainer = "container:Rinku.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B2D8A5521B2BAAAB00AB5B17"
-            BuildableName = "RInku.framework"
-            BlueprintName = "RInku"
+            BlueprintIdentifier = "B2D8A56E1B2BAB4500AB5B17"
+            BuildableName = "Rinku.framework"
+            BlueprintName = "Rinku"
             ReferencedContainer = "container:Rinku.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
