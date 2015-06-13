@@ -29,15 +29,13 @@ public class RinkuSession : NSObject,  NSURLSessionDataDelegate {
         var task = self.taskForRequest(request)
         
         if task == nil {
-            task = RinkuNetworkTask(request: request)
+            self.tasks.insert(RinkuNetworkTask(request: request, completion: completion, failure: failure, progress: progress))
+            session.dataTaskWithRequest(request)?.resume()
         }
-        
-        task.addCompletionHandler(completion)
-        task.addFailureHandler(failure)
-        task.addProgressHandler(progress)
-        
-        self.tasks.insert(task)
-        session.dataTaskWithRequest(request)?.resume()
+        else
+        {
+            task.addHandlers(completion, failure: failure, progress: progress)
+        }
     }
     
     public func cancelAll() {

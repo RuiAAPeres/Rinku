@@ -18,25 +18,23 @@ struct RinkuNetworkTask : Hashable {
     let request : NSURLRequest
     var data : NSMutableData = NSMutableData()
     
-    private var progressHandlers : [ProgressHandler] = []
-    private var failureHandlers : [FailureHandler] = []
     private var completionHandlers : [CompletionHandler] = []
+    private var failureHandlers : [FailureHandler] = []
+    private var progressHandlers : [ProgressHandler] = []
+
     
-    
-    init(request : NSURLRequest) {
+    init(request : NSURLRequest, completion : CompletionHandler, failure : FailureHandler, progress : ProgressHandler) {
         self.request = request
+        
+        self.completionHandlers = [completion]
+        self.failureHandlers = [failure]
+        self.progressHandlers = [progress]
     }
     
-    mutating func addProgressHandler(progressHandler : ProgressHandler) -> () {
-        progressHandlers += [progressHandler]
-    }
-    
-    mutating func addCompletionHandler(completionHandler : CompletionHandler) -> () {
-        completionHandlers += [completionHandler]
-    }
-    
-    mutating func addFailureHandler(failureHandler : FailureHandler) -> () {
-        failureHandlers += [failureHandler]
+    mutating func addHandlers(completion : CompletionHandler, failure : FailureHandler, progress : ProgressHandler) -> () {
+        completionHandlers += [completion]
+        failureHandlers += [failure]
+        progressHandlers += [progress]
     }
     
     func applyCompletionHandler() -> () {
