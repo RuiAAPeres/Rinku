@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum Method: String { // Stolen from chriseidhof/github-issues
+public enum Method: String { // Stolen from chriseidhof/github-issues 😅
     case OPTIONS = "OPTIONS"
     case GET = "GET"
     case HEAD = "HEAD"
