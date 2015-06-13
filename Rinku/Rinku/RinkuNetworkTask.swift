@@ -10,35 +10,49 @@ import Foundation
 
 public typealias CompletionHandler = NSData -> ()
 public typealias ProgressHandler = Double -> ()
-public typealias FailureHandler = (statusCode: Int, error: NSError?, data: NSData?) -> ()
+public typealias FailureHandler = (Int, NSError?, NSData?) -> ()
 
 
-struct RinkuNetworkTask {
+struct RinkuNetworkTask : Equatable {
     
     let request : NSURLRequest
     var data : NSData
-    
     
     private var progressHandlers : [ProgressHandler] = []
     private var failureHandlers : [FailureHandler] = []
     private var completionHandlers : [CompletionHandler] = []
     
     mutating func addProgressHandler(progressHandler : ProgressHandler) -> () {
-        self.progressHandlers += [progressHandler]
+        progressHandlers += [progressHandler]
     }
     
     mutating func addCompletionHandler(completionHandler : CompletionHandler) -> () {
-        self.completionHandlers += [completionHandler]
+        completionHandlers += [completionHandler]
     }
     
     mutating func addFailureHandler(failureHandler : FailureHandler) -> () {
-        self.failureHandlers += [failureHandler]
+        failureHandlers += [failureHandler]
     }
     
-    
     func applyCompletionHandler() -> () {
-        self.completionHandlers.map { handler in
+        for handler in completionHandlers {
             handler(data)
         }
     }
+    
+    func applyFailureHandlers(statusCode: Int, error: NSError?, data: NSData?) -> () {
+        for handler in failureHandlers {
+            handler(statusCode, error, data)
+        }
+    }
+    
+    func applyProgressHandlers(progress : Double) {
+        for handler in progressHandlers {
+            handler(progress)
+        }
+    }
+}
+
+func == (lhs: RinkuNetworkTask, rhs: RinkuNetworkTask) -> Bool {
+    return lhs.request.URL == rhs.request.URL
 }
