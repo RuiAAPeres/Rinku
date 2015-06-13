@@ -7,56 +7,99 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C75B6262194A56E6000B2129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B6261194A56E6000B2129 /* AppDelegate.swift */; };
-		C75B6264194A56E6000B2129 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75B6263194A56E6000B2129 /* Images.xcassets */; };
-		C75B6270194A56E7000B2129 /* RinkuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B626F194A56E7000B2129 /* RinkuTests.swift */; };
-		C75B627B194A577F000B2129 /* Rinku.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B627A194A577F000B2129 /* Rinku.swift */; };
+		B2D8A5791B2BAB4500AB5B17 /* Rinku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D8A56F1B2BAB4500AB5B17 /* Rinku.framework */; };
+		B2D8A58D1B2BAC3F00AB5B17 /* Rinku.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5891B2BAC3F00AB5B17 /* Rinku.swift */; };
+		B2D8A58E1B2BAC3F00AB5B17 /* Rinku.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D8A58A1B2BAC3F00AB5B17 /* Rinku.h */; };
+		B2D8A5941B2BACE400AB5B17 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5931B2BACE400AB5B17 /* HTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C75B626A194A56E7000B2129 /* PBXContainerItemProxy */ = {
+		B2D8A57A1B2BAB4500AB5B17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C75B6254194A56E6000B2129 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C75B625B194A56E6000B2129;
+			remoteGlobalIDString = B2D8A56E1B2BAB4500AB5B17;
 			remoteInfo = Rinku;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C75B625C194A56E6000B2129 /* Rinku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rinku.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C75B6260194A56E6000B2129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C75B6261194A56E6000B2129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C75B6263194A56E6000B2129 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C75B6269194A56E7000B2129 /* RinkuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RinkuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C75B626E194A56E7000B2129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C75B626F194A56E7000B2129 /* RinkuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RinkuTests.swift; sourceTree = "<group>"; };
-		C75B627A194A577F000B2129 /* Rinku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rinku.swift; sourceTree = "<group>"; };
+		B2D8A56F1B2BAB4500AB5B17 /* Rinku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rinku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D8A5781B2BAB4500AB5B17 /* RinkuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RinkuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D8A5891B2BAC3F00AB5B17 /* Rinku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rinku.swift; sourceTree = "<group>"; };
+		B2D8A58A1B2BAC3F00AB5B17 /* Rinku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rinku.h; sourceTree = "<group>"; };
+		B2D8A58C1B2BAC3F00AB5B17 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D8A5911B2BACB200AB5B17 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D8A5931B2BACE400AB5B17 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C75B6259194A56E6000B2129 /* Frameworks */ = {
+		B2D8A56B1B2BAB4500AB5B17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C75B6266194A56E7000B2129 /* Frameworks */ = {
+		B2D8A5751B2BAB4500AB5B17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D8A5791B2BAB4500AB5B17 /* Rinku.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2D8A5701B2BAB4500AB5B17 /* Rinku */ = {
+			isa = PBXGroup;
+			children = (
+				B2D8A58A1B2BAC3F00AB5B17 /* Rinku.h */,
+				B2D8A5881B2BAC3F00AB5B17 /* Rinku */,
+				B2D8A58B1B2BAC3F00AB5B17 /* Supporting Files */,
+			);
+			path = Rinku;
+			sourceTree = "<group>";
+		};
+		B2D8A57C1B2BAB4500AB5B17 /* RinkuTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2D8A5901B2BACB200AB5B17 /* Supporting Files */,
+			);
+			path = RinkuTests;
+			sourceTree = "<group>";
+		};
+		B2D8A5881B2BAC3F00AB5B17 /* Rinku */ = {
+			isa = PBXGroup;
+			children = (
+				B2D8A5891B2BAC3F00AB5B17 /* Rinku.swift */,
+				B2D8A5931B2BACE400AB5B17 /* HTTPMethod.swift */,
+			);
+			path = Rinku;
+			sourceTree = "<group>";
+		};
+		B2D8A58B1B2BAC3F00AB5B17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2D8A58C1B2BAC3F00AB5B17 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2D8A5901B2BACB200AB5B17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2D8A5911B2BACB200AB5B17 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C75B6253194A56E6000B2129 = {
 			isa = PBXGroup;
 			children = (
-				C75B625E194A56E6000B2129 /* Rinku */,
-				C75B626C194A56E7000B2129 /* RinkuTests */,
+				B2D8A5701B2BAB4500AB5B17 /* Rinku */,
+				B2D8A57C1B2BAB4500AB5B17 /* RinkuTests */,
 				C75B625D194A56E6000B2129 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,66 +107,34 @@
 		C75B625D194A56E6000B2129 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C75B625C194A56E6000B2129 /* Rinku.app */,
-				C75B6269194A56E7000B2129 /* RinkuTests.xctest */,
+				B2D8A56F1B2BAB4500AB5B17 /* Rinku.framework */,
+				B2D8A5781B2BAB4500AB5B17 /* RinkuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C75B625E194A56E6000B2129 /* Rinku */ = {
-			isa = PBXGroup;
-			children = (
-				C75B6279194A5765000B2129 /* Rinku */,
-				C75B6261194A56E6000B2129 /* AppDelegate.swift */,
-				C75B6263194A56E6000B2129 /* Images.xcassets */,
-				C75B625F194A56E6000B2129 /* Supporting Files */,
-			);
-			path = Rinku;
-			sourceTree = "<group>";
-		};
-		C75B625F194A56E6000B2129 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C75B6260194A56E6000B2129 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C75B626C194A56E7000B2129 /* RinkuTests */ = {
-			isa = PBXGroup;
-			children = (
-				C75B626F194A56E7000B2129 /* RinkuTests.swift */,
-				C75B626D194A56E7000B2129 /* Supporting Files */,
-			);
-			path = RinkuTests;
-			sourceTree = "<group>";
-		};
-		C75B626D194A56E7000B2129 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C75B626E194A56E7000B2129 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C75B6279194A5765000B2129 /* Rinku */ = {
-			isa = PBXGroup;
-			children = (
-				C75B627A194A577F000B2129 /* Rinku.swift */,
-			);
-			path = Rinku;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B2D8A56C1B2BAB4500AB5B17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D8A58E1B2BAC3F00AB5B17 /* Rinku.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		C75B625B194A56E6000B2129 /* Rinku */ = {
+		B2D8A56E1B2BAB4500AB5B17 /* Rinku */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C75B6273194A56E7000B2129 /* Build configuration list for PBXNativeTarget "Rinku" */;
+			buildConfigurationList = B2D8A5801B2BAB4500AB5B17 /* Build configuration list for PBXNativeTarget "Rinku" */;
 			buildPhases = (
-				C75B6258194A56E6000B2129 /* Sources */,
-				C75B6259194A56E6000B2129 /* Frameworks */,
-				C75B625A194A56E6000B2129 /* Resources */,
+				B2D8A56A1B2BAB4500AB5B17 /* Sources */,
+				B2D8A56B1B2BAB4500AB5B17 /* Frameworks */,
+				B2D8A56C1B2BAB4500AB5B17 /* Headers */,
+				B2D8A56D1B2BAB4500AB5B17 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -131,25 +142,25 @@
 			);
 			name = Rinku;
 			productName = Rinku;
-			productReference = C75B625C194A56E6000B2129 /* Rinku.app */;
-			productType = "com.apple.product-type.application";
+			productReference = B2D8A56F1B2BAB4500AB5B17 /* Rinku.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		C75B6268194A56E7000B2129 /* RinkuTests */ = {
+		B2D8A5771B2BAB4500AB5B17 /* RinkuTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C75B6276194A56E7000B2129 /* Build configuration list for PBXNativeTarget "RinkuTests" */;
+			buildConfigurationList = B2D8A5831B2BAB4500AB5B17 /* Build configuration list for PBXNativeTarget "RinkuTests" */;
 			buildPhases = (
-				C75B6265194A56E7000B2129 /* Sources */,
-				C75B6266194A56E7000B2129 /* Frameworks */,
-				C75B6267194A56E7000B2129 /* Resources */,
+				B2D8A5741B2BAB4500AB5B17 /* Sources */,
+				B2D8A5751B2BAB4500AB5B17 /* Frameworks */,
+				B2D8A5761B2BAB4500AB5B17 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C75B626B194A56E7000B2129 /* PBXTargetDependency */,
+				B2D8A57B1B2BAB4500AB5B17 /* PBXTargetDependency */,
 			);
 			name = RinkuTests;
 			productName = RinkuTests;
-			productReference = C75B6269194A56E7000B2129 /* RinkuTests.xctest */;
+			productReference = B2D8A5781B2BAB4500AB5B17 /* RinkuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -162,12 +173,11 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Aphely;
 				TargetAttributes = {
-					C75B625B194A56E6000B2129 = {
-						CreatedOnToolsVersion = 6.0;
+					B2D8A56E1B2BAB4500AB5B17 = {
+						CreatedOnToolsVersion = 7.0;
 					};
-					C75B6268194A56E7000B2129 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = C75B625B194A56E6000B2129;
+					B2D8A5771B2BAB4500AB5B17 = {
+						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
@@ -183,22 +193,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C75B625B194A56E6000B2129 /* Rinku */,
-				C75B6268194A56E7000B2129 /* RinkuTests */,
+				B2D8A56E1B2BAB4500AB5B17 /* Rinku */,
+				B2D8A5771B2BAB4500AB5B17 /* RinkuTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C75B625A194A56E6000B2129 /* Resources */ = {
+		B2D8A56D1B2BAB4500AB5B17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C75B6264194A56E6000B2129 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C75B6267194A56E7000B2129 /* Resources */ = {
+		B2D8A5761B2BAB4500AB5B17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,34 +217,114 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C75B6258194A56E6000B2129 /* Sources */ = {
+		B2D8A56A1B2BAB4500AB5B17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C75B6262194A56E6000B2129 /* AppDelegate.swift in Sources */,
-				C75B627B194A577F000B2129 /* Rinku.swift in Sources */,
+				B2D8A5941B2BACE400AB5B17 /* HTTPMethod.swift in Sources */,
+				B2D8A58D1B2BAC3F00AB5B17 /* Rinku.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C75B6265194A56E7000B2129 /* Sources */ = {
+		B2D8A5741B2BAB4500AB5B17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C75B6270194A56E7000B2129 /* RinkuTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C75B626B194A56E7000B2129 /* PBXTargetDependency */ = {
+		B2D8A57B1B2BAB4500AB5B17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C75B625B194A56E6000B2129 /* Rinku */;
-			targetProxy = C75B626A194A56E7000B2129 /* PBXContainerItemProxy */;
+			target = B2D8A56E1B2BAB4500AB5B17 /* Rinku */;
+			targetProxy = B2D8A57A1B2BAB4500AB5B17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		B2D8A5811B2BAB4500AB5B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Rinku/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruiperes.Rinku;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B2D8A5821B2BAB4500AB5B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Rinku/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruiperes.Rinku;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B2D8A5841B2BAB4500AB5B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "RinkuTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruiperes.RinkuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B2D8A5851B2BAB4500AB5B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "RinkuTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruiperes.RinkuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		C75B6271194A56E7000B2129 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -314,94 +403,30 @@
 			};
 			name = Release;
 		};
-		C75B6274194A56E7000B2129 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = Rinku/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aphely.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		C75B6275194A56E7000B2129 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = Rinku/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aphely.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		C75B6277194A56E7000B2129 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rinku.app/Rinku";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RinkuTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aphely.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		C75B6278194A56E7000B2129 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rinku.app/Rinku";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RinkuTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aphely.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B2D8A5801B2BAB4500AB5B17 /* Build configuration list for PBXNativeTarget "Rinku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D8A5811B2BAB4500AB5B17 /* Debug */,
+				B2D8A5821B2BAB4500AB5B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B2D8A5831B2BAB4500AB5B17 /* Build configuration list for PBXNativeTarget "RinkuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D8A5841B2BAB4500AB5B17 /* Debug */,
+				B2D8A5851B2BAB4500AB5B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C75B6257194A56E6000B2129 /* Build configuration list for PBXProject "Rinku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C75B6271194A56E7000B2129 /* Debug */,
 				C75B6272194A56E7000B2129 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C75B6273194A56E7000B2129 /* Build configuration list for PBXNativeTarget "Rinku" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C75B6274194A56E7000B2129 /* Debug */,
-				C75B6275194A56E7000B2129 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C75B6276194A56E7000B2129 /* Build configuration list for PBXNativeTarget "RinkuTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C75B6277194A56E7000B2129 /* Debug */,
-				C75B6278194A56E7000B2129 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

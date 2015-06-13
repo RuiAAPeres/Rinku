@@ -22,7 +22,7 @@ struct Rinku {
         request =  NSMutableURLRequest(URL: url!)
         request.HTTPMethod = httpMethod
         
-        if let httpHeadersUnWrapped = httpHeaders {
+        if let h = httpHeaders {
             request.allHTTPHeaderFields = httpHeadersUnWrapped
         }
     }
@@ -61,13 +61,5 @@ struct Rinku {
         request.setValue("\(postData.length)", forHTTPHeaderField: "Content-Length")
         request.HTTPBody = postData
         return self
-    }
-    
-    func completion(completion : (NSData?, NSURLResponse?, NSError?) -> ()) -> () {
-        
-        let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration(), delegate: nil
-            , delegateQueue: NSOperationQueue.mainQueue())
-        
-        session.dataTaskWithRequest(self.request, completionHandler: completion)!.resume()
     }
 }
