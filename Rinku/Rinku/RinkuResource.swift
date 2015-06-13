@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias Header = [String : String]
+public typealias Header = [String : String]
 
 public struct RinkuResource : Equatable, CustomStringConvertible {
     
@@ -16,6 +16,13 @@ public struct RinkuResource : Equatable, CustomStringConvertible {
     let method : Method
     let body : NSData?
     let header : Header?
+    
+    public init(path : String, method : Method, body : NSData?, header : Header?) {
+        self.path = path
+        self.method = method
+        self.body = body
+        self.header = header
+    }
     
     public var description : String {
         return "Path:\(path)\nMethod:\(method.rawValue)\n"

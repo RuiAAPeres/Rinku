@@ -71,8 +71,8 @@
 		B2D8A57C1B2BAB4500AB5B17 /* RinkuTests */ = {
 			isa = PBXGroup;
 			children = (
-				B2D8A5901B2BACB200AB5B17 /* Supporting Files */,
 				B2D8A5A11B2BFFB300AB5B17 /* RinkuResource.swift */,
+				B2D8A5901B2BACB200AB5B17 /* Supporting Files */,
 			);
 			path = RinkuTests;
 			sourceTree = "<group>";
