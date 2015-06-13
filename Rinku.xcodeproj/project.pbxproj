@@ -13,6 +13,7 @@
 		B2D8A5941B2BACE400AB5B17 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5931B2BACE400AB5B17 /* Method.swift */; };
 		B2D8A5961B2BB36C00AB5B17 /* RinkuNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5951B2BB36C00AB5B17 /* RinkuNetworkTask.swift */; };
 		B2D8A59E1B2BC7D400AB5B17 /* RinkuSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A59D1B2BC7D400AB5B17 /* RinkuSession.swift */; };
+		B2D8A5A21B2BFFB300AB5B17 /* RinkuResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5A11B2BFFB300AB5B17 /* RinkuResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		B2D8A5931B2BACE400AB5B17 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		B2D8A5951B2BB36C00AB5B17 /* RinkuNetworkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuNetworkTask.swift; sourceTree = "<group>"; };
 		B2D8A59D1B2BC7D400AB5B17 /* RinkuSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuSession.swift; sourceTree = "<group>"; };
+		B2D8A5A11B2BFFB300AB5B17 /* RinkuResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuResource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				B2D8A5901B2BACB200AB5B17 /* Supporting Files */,
+				B2D8A5A11B2BFFB300AB5B17 /* RinkuResource.swift */,
 			);
 			path = RinkuTests;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D8A5A21B2BFFB300AB5B17 /* RinkuResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +311,7 @@
 		B2D8A5841B2BAB4500AB5B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "RinkuTests/Supporting Files/Info.plist";
@@ -315,12 +320,14 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiperes.RinkuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		B2D8A5851B2BAB4500AB5B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -421,6 +428,7 @@
 				B2D8A5821B2BAB4500AB5B17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2D8A5831B2BAB4500AB5B17 /* Build configuration list for PBXNativeTarget "RinkuTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +437,7 @@
 				B2D8A5851B2BAB4500AB5B17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C75B6257194A56E6000B2129 /* Build configuration list for PBXProject "Rinku" */ = {
 			isa = XCConfigurationList;
