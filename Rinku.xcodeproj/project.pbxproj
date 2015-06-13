@@ -11,6 +11,7 @@
 		B2D8A58D1B2BAC3F00AB5B17 /* RinkuResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5891B2BAC3F00AB5B17 /* RinkuResource.swift */; };
 		B2D8A58E1B2BAC3F00AB5B17 /* RinkuHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D8A58A1B2BAC3F00AB5B17 /* RinkuHeader.h */; };
 		B2D8A5941B2BACE400AB5B17 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5931B2BACE400AB5B17 /* Method.swift */; };
+		B2D8A5961B2BB36C00AB5B17 /* RinkuNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5951B2BB36C00AB5B17 /* RinkuNetworkTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		B2D8A58C1B2BAC3F00AB5B17 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2D8A5911B2BACB200AB5B17 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2D8A5931B2BACE400AB5B17 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		B2D8A5951B2BB36C00AB5B17 /* RinkuNetworkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuNetworkTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				B2D8A5891B2BAC3F00AB5B17 /* RinkuResource.swift */,
+				B2D8A5951B2BB36C00AB5B17 /* RinkuNetworkTask.swift */,
 				B2D8A5931B2BACE400AB5B17 /* Method.swift */,
 			);
 			path = Rinku;
@@ -171,7 +174,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = Aphely;
+				ORGANIZATIONNAME = Rinku;
 				TargetAttributes = {
 					B2D8A56E1B2BAB4500AB5B17 = {
 						CreatedOnToolsVersion = 7.0;
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2D8A5941B2BACE400AB5B17 /* Method.swift in Sources */,
+				B2D8A5961B2BB36C00AB5B17 /* RinkuNetworkTask.swift in Sources */,
 				B2D8A58D1B2BAC3F00AB5B17 /* RinkuResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
