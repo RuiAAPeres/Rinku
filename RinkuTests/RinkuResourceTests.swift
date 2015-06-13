@@ -10,6 +10,12 @@ import XCTest
 @testable import Rinku
 
 class RinkuResourceTests: XCTestCase {
+    
+    func testDescription() {
+        let r1 = RinkuResource(path: "r1", method: .POST, body: nil, header: nil)
+        
+        XCTAssert(r1.description == "Path:r1\nMethod:POST\n")
+    }
 
     func testEquality() {
         
@@ -25,5 +31,51 @@ class RinkuResourceTests: XCTestCase {
         let r2 = RinkuResource(path: "r2", method: .POST, body: nil, header: nil)
         
         XCTAssert(r1 != r2)
+    }
+    
+    func testEqualityDifferentMethod() {
+        
+        let r1 = RinkuResource(path: "r1", method: .POST, body: nil, header: nil)
+        let r2 = RinkuResource(path: "r1", method: .GET, body: nil, header: nil)
+        
+        XCTAssert(r1 != r2)
+    }
+    
+    func testEqualityDifferentBody() {
+        
+        do {
+            let r1 = RinkuResource(path: "r1", method: .POST, body: NSData(), header: nil)
+            let r2 = RinkuResource(path: "r1", method: .POST, body: nil, header: nil)
+            
+            XCTAssert(r1 != r2)
+        }
+
+        do {
+            let r1 = RinkuResource(path: "r1", method: .POST, body: nil, header: nil)
+            let r2 = RinkuResource(path: "r1", method: .POST, body: NSData(), header: nil)
+            
+            XCTAssert(r1 != r2)
+        }
+    }
+    
+    func testEqualityDifferentBodyWithDifferenData() {
+        
+        let r1Data = "Hello World".dataUsingEncoding(NSUTF8StringEncoding)
+        let r2Data = "Foo Bar".dataUsingEncoding(NSUTF8StringEncoding)
+
+        let r1 = RinkuResource(path: "r1", method: .POST, body: r1Data, header: nil)
+        let r2 = RinkuResource(path: "r1", method: .POST, body: r2Data, header: nil)
+        
+        XCTAssert(r1 != r2)
+    }
+    
+    func testEqualityEqualBodyWithEqualData() {
+        
+        let rData = "Hello World".dataUsingEncoding(NSUTF8StringEncoding)
+        
+        let r1 = RinkuResource(path: "r1", method: .POST, body: rData, header: nil)
+        let r2 = RinkuResource(path: "r1", method: .POST, body: rData, header: nil)
+        
+        XCTAssert(r1 == r2)
     }
 }
