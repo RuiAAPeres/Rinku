@@ -11,7 +11,6 @@ import Foundation
 public typealias CompletionHandler = (Int, NSData, NSError?) -> ()
 public typealias ProgressHandler = Double -> ()
 
-
 struct RinkuNetworkTask : Hashable {
     
     let request : NSURLRequest
