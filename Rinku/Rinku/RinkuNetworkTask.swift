@@ -8,9 +8,8 @@
 
 import Foundation
 
-public typealias CompletionHandler = NSData -> ()
+public typealias CompletionHandler = (Int, NSData, NSError?) -> ()
 public typealias ProgressHandler = Double -> ()
-public typealias FailureHandler = (Int, NSError?, NSData) -> ()
 
 
 struct RinkuNetworkTask : Hashable {
@@ -19,33 +18,24 @@ struct RinkuNetworkTask : Hashable {
     var data : NSMutableData = NSMutableData()
     
     private var completionHandlers : [CompletionHandler] = []
-    private var failureHandlers : [FailureHandler] = []
     private var progressHandlers : [ProgressHandler] = []
 
     
-    init(request : NSURLRequest, completion : CompletionHandler, failure : FailureHandler, progress : ProgressHandler) {
+    init(request : NSURLRequest, completion : CompletionHandler, progress : ProgressHandler) {
         self.request = request
         
         self.completionHandlers = [completion]
-        self.failureHandlers = [failure]
         self.progressHandlers = [progress]
     }
     
-    mutating func addHandlers(completion : CompletionHandler, failure : FailureHandler, progress : ProgressHandler) -> () {
+    mutating func addHandlers(completion : CompletionHandler, progress : ProgressHandler) -> () {
         completionHandlers += [completion]
-        failureHandlers += [failure]
         progressHandlers += [progress]
     }
     
-    func applyCompletionHandler() -> () {
+    func applyCompletionHandler(statusCode: Int, error: NSError?) -> () {
         for handler in completionHandlers {
-            handler(data)
-        }
-    }
-    
-    func applyFailureHandlers(statusCode: Int, error: NSError?) -> () {
-        for handler in failureHandlers {
-            handler(statusCode, error, data)
+            handler(statusCode,data, error)
         }
     }
     

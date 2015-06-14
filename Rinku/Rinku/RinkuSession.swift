@@ -24,17 +24,17 @@ public class RinkuSession : NSObject,  NSURLSessionDataDelegate {
         session.invalidateAndCancel()
     }
     
-    public func makeRequest(request : NSURLRequest, completion : CompletionHandler, failure : FailureHandler, progress : ProgressHandler = {double in }) -> () {
+    public func makeRequest(request : NSURLRequest, completion : CompletionHandler, progress : ProgressHandler = {double in }) -> () {
         
         var task = self.taskForRequest(request)
         
         if task == nil {
-            self.tasks.insert(RinkuNetworkTask(request: request, completion: completion, failure: failure, progress: progress))
+            self.tasks.insert(RinkuNetworkTask(request: request, completion: completion, progress: progress))
             session.dataTaskWithRequest(request)?.resume()
         }
         else
         {
-            task.addHandlers(completion, failure: failure, progress: progress)
+            task.addHandlers(completion, progress: progress)
         }
     }
     
@@ -70,13 +70,7 @@ public class RinkuSession : NSObject,  NSURLSessionDataDelegate {
             statusCode = task.statusCode
         }
         
-        if error != nil {
-            rinkuTask.applyCompletionHandler()
-        }
-        else
-        {
-            rinkuTask.applyFailureHandlers(statusCode, error: error)
-        }
+        rinkuTask.applyCompletionHandler(statusCode, error: error)
     }
     
     private func taskForRequest(request : NSURLRequest?) -> RinkuNetworkTask! {
