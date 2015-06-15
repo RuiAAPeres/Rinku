@@ -17,6 +17,7 @@ public class RinkuSession : NSObject,  NSURLSessionDataDelegate {
     public init(host : NSURL) {
         self.host = host
         super.init()
+        
         self.session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration(), delegate: self, delegateQueue: nil)
     }
     
@@ -87,4 +88,3 @@ public class RinkuSession : NSObject,  NSURLSessionDataDelegate {
     }
 
 }
-
