@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B21A7E8F1B2E4A7400D05ECD /* Lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A7E8E1B2E4A7400D05ECD /* Lens.swift */; };
 		B2D8A5791B2BAB4500AB5B17 /* Rinku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D8A56F1B2BAB4500AB5B17 /* Rinku.framework */; };
 		B2D8A58D1B2BAC3F00AB5B17 /* RinkuResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5891B2BAC3F00AB5B17 /* RinkuResource.swift */; };
 		B2D8A58E1B2BAC3F00AB5B17 /* RinkuHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D8A58A1B2BAC3F00AB5B17 /* RinkuHeader.h */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B21A7E8E1B2E4A7400D05ECD /* Lens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lens.swift; sourceTree = "<group>"; };
 		B2D8A56F1B2BAB4500AB5B17 /* Rinku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rinku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D8A5781B2BAB4500AB5B17 /* RinkuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RinkuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D8A5891B2BAC3F00AB5B17 /* RinkuResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuResource.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B21A7E8D1B2E4A6D00D05ECD /* Functional */ = {
+			isa = PBXGroup;
+			children = (
+				B21A7E8E1B2E4A7400D05ECD /* Lens.swift */,
+			);
+			path = Functional;
+			sourceTree = "<group>";
+		};
 		B2D8A5701B2BAB4500AB5B17 /* Rinku */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 		B2D8A5881B2BAC3F00AB5B17 /* Rinku */ = {
 			isa = PBXGroup;
 			children = (
+				B21A7E8D1B2E4A6D00D05ECD /* Functional */,
 				B2D8A5891B2BAC3F00AB5B17 /* RinkuResource.swift */,
 				B2D8A5951B2BB36C00AB5B17 /* RinkuNetworkTask.swift */,
 				B2D8A59D1B2BC7D400AB5B17 /* RinkuSession.swift */,
@@ -228,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2D8A5961B2BB36C00AB5B17 /* RinkuNetworkTask.swift in Sources */,
+				B21A7E8F1B2E4A7400D05ECD /* Lens.swift in Sources */,
 				B2D8A59E1B2BC7D400AB5B17 /* RinkuSession.swift in Sources */,
 				B2D8A58D1B2BAC3F00AB5B17 /* RinkuResource.swift in Sources */,
 			);

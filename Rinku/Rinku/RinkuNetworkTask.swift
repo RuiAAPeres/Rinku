@@ -14,24 +14,11 @@ public typealias ProgressHandler = Double -> ()
 struct RinkuNetworkTask : Hashable {
     
     let request : NSURLRequest
-    var data : NSMutableData = NSMutableData()
+    let data : NSData
     
-    private var completionHandlers : [CompletionHandler] = []
-    private var progressHandlers : [ProgressHandler] = []
+    let completionHandlers : [CompletionHandler]
+    let progressHandlers : [ProgressHandler]
 
-    
-    init(request : NSURLRequest, completion : CompletionHandler, progress : ProgressHandler) {
-        self.request = request
-        
-        self.completionHandlers = [completion]
-        self.progressHandlers = [progress]
-    }
-    
-    mutating func addHandlers(completion : CompletionHandler, progress : ProgressHandler) -> () {
-        completionHandlers += [completion]
-        progressHandlers += [progress]
-    }
-    
     func applyCompletionHandler(statusCode: Int, error: NSError?) -> () {
         for handler in completionHandlers {
             handler(statusCode,data, error)
@@ -51,4 +38,20 @@ struct RinkuNetworkTask : Hashable {
 
 func == (lhs: RinkuNetworkTask, rhs: RinkuNetworkTask) -> Bool {
     return lhs.request.URL == rhs.request.URL
+}
+
+
+extension RinkuNetworkTask {
+    
+    func dataLens() -> Lens<RinkuNetworkTask, NSData> {
+       return Lens(from:{$0.data }, to: { RinkuNetworkTask(request: $1.request, data: $0, completionHandlers: $1.completionHandlers, progressHandlers: $1.progressHandlers) } )
+    }
+    
+    func completionLens() -> Lens<RinkuNetworkTask, [CompletionHandler]> {
+        return Lens(from:{$0.completionHandlers}, to: { RinkuNetworkTask(request: $1.request, data: $1.data, completionHandlers: $0, progressHandlers: $1.progressHandlers) } )
+    }
+    
+    func progressLens() -> Lens<RinkuNetworkTask, [ProgressHandler]> {
+        return Lens(from:{$0.progressHandlers}, to: { RinkuNetworkTask(request: $1.request, data: $1.data, completionHandlers: $1.completionHandlers, progressHandlers: $0) } )
+    }
 }
