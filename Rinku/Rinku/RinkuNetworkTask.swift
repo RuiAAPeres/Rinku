@@ -13,19 +13,22 @@ public typealias ProgressHandler = Double -> ()
 
 struct RinkuNetworkTask : Hashable {
     
-    let request : NSURLRequest
+    let url : NSURL
     var data : NSMutableData = NSMutableData()
     
     var completionHandlers : [CompletionHandler] = []
     var progressHandlers : [ProgressHandler] = []
     
-    init (request : NSURLRequest) {
-        self.request = request
+    init(url : NSURL) {
+        self.url = url
     }
     
-    mutating func addHandlers(completion : CompletionHandler, progress : ProgressHandler) -> () {
+    mutating func addHandlers(completion : CompletionHandler, progress : ProgressHandler?) -> () {
        completionHandlers += [completion]
-       progressHandlers += [progress]
+        
+        if let progress = progress {
+            progressHandlers += [progress]
+        }
     }
     
     func applyCompletionHandler(statusCode: Int, error: NSError?) -> () {
@@ -41,12 +44,12 @@ struct RinkuNetworkTask : Hashable {
     }
     
     var hashValue: Int {
-        return (request.URL?.hashValue)!
+        return url.hashValue
     }
 }
 
 func == (lhs: RinkuNetworkTask, rhs: RinkuNetworkTask) -> Bool {
-    return lhs.request.URL == rhs.request.URL
+    return lhs.url == rhs.url
 }
 
 

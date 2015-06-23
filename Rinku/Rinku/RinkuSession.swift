@@ -28,7 +28,7 @@ public class RinkuSession : NSObject,  NSURLSessionDataDelegate {
         var task = self.taskForRequest(request)
         
         if task == nil {
-            task = RinkuNetworkTask(request: request)
+            task = RinkuNetworkTask(url: request.URL!)
             self.tasks.insert(task)
             session.dataTaskWithRequest(request)?.resume()
         }
@@ -72,7 +72,7 @@ public class RinkuSession : NSObject,  NSURLSessionDataDelegate {
     }
     
     private func taskForRequest(request : NSURLRequest?) -> RinkuNetworkTask! {
-        return tasks.filter { task in task.request == request }.first
+        return tasks.filter { task in task.url == request?.URL! }.first
     }
     
     private func removeTask(task: RinkuNetworkTask) {
