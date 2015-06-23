@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C75B625B194A56E6000B2129"
-               BuildableName = "Rinku.app"
+               BlueprintIdentifier = "B2D8A56E1B2BAB4500AB5B17"
+               BuildableName = "Rinku.framework"
                BlueprintName = "Rinku"
                ReferencedContainer = "container:Rinku.xcodeproj">
             </BuildableReference>
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C75B6268194A56E7000B2129"
+               BlueprintIdentifier = "B2D8A5771B2BAB4500AB5B17"
                BuildableName = "RinkuTests.xctest"
                BlueprintName = "RinkuTests"
                ReferencedContainer = "container:Rinku.xcodeproj">
@@ -42,8 +42,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C75B625B194A56E6000B2129"
-            BuildableName = "Rinku.app"
+            BlueprintIdentifier = "B2D8A56E1B2BAB4500AB5B17"
+            BuildableName = "Rinku.framework"
             BlueprintName = "Rinku"
             ReferencedContainer = "container:Rinku.xcodeproj">
          </BuildableReference>
@@ -58,11 +58,12 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C75B625B194A56E6000B2129"
-            BuildableName = "Rinku.app"
+            BlueprintIdentifier = "B2D8A56E1B2BAB4500AB5B17"
+            BuildableName = "Rinku.framework"
             BlueprintName = "Rinku"
             ReferencedContainer = "container:Rinku.xcodeproj">
          </BuildableReference>
@@ -76,11 +77,12 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C75B625B194A56E6000B2129"
-            BuildableName = "Rinku.app"
+            BlueprintIdentifier = "B2D8A56E1B2BAB4500AB5B17"
+            BuildableName = "Rinku.framework"
             BlueprintName = "Rinku"
             ReferencedContainer = "container:Rinku.xcodeproj">
          </BuildableReference>

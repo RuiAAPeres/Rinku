@@ -12,10 +12,8 @@ public class RinkuSession : NSObject,  NSURLSessionDataDelegate {
     
     private var session: NSURLSession!
     private var tasks: Set<RinkuNetworkTask> = Set()
-    private var host : NSURL
     
-    public init(host : NSURL) {
-        self.host = host
+    public override init() {
         super.init()
         
         self.session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration(), delegate: self, delegateQueue: nil)
