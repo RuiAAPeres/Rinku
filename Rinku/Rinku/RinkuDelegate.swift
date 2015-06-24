@@ -1,5 +1,5 @@
 //
-//  RinkuSession.swift
+//  RinkuDelegate.swift
 //  Rinku
 //
 //  Created by Rui Peres on 12/06/2015.
@@ -8,46 +8,22 @@
 
 import Foundation
 
-public class RinkuSession : NSObject,  NSURLSessionDataDelegate {
+public class RinkuDelegate : NSObject,  NSURLSessionDataDelegate {
     
-    private var session: NSURLSession!
     private var tasks: Set<RinkuNetworkTask> = Set()
     
-    public override init() {
-        super.init()
-        
-        self.session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration(), delegate: self, delegateQueue: nil)
-    }
-    
-    deinit {
-        session.invalidateAndCancel()
-    }
-    
-    public func makeRequest(request : NSURLRequest, completion : CompletionHandler, progress : ProgressHandler = {double in }) -> () {
+    public func addRequest(request : NSURLRequest, completion : CompletionHandler, progress : ProgressHandler = {double in }) -> () {
         
         var task = self.taskForRequest(request)
         
         if task == nil {
             task = RinkuNetworkTask(url: request.URL!)
             self.tasks.insert(task)
-            session.dataTaskWithRequest(request)?.resume()
         }
 
         task.addHandlers(completion, progress: progress)
     }
-    
-    public func cancelAll() {
-        session.getAllTasksWithCompletionHandler { tasks in
-            self.cancelTasks(tasks)
-        }
-    }
-    
-    public func cancelRequest(request : NSURLRequest) {
-        session.getAllTasksWithCompletionHandler { tasks in
-            self.cancelTasks(tasks.filter { task in task.originalRequest == request })
-        }
-    }
-    
+        
     public func URLSession(session: NSURLSession, dataTask: NSURLSessionDataTask, didReceiveData data: NSData) {
         guard let rinkuTask = taskForRequest(dataTask.originalRequest) else { return }
         
