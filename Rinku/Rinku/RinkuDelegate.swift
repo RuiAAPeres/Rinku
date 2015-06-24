@@ -12,7 +12,7 @@ public class RinkuDelegate : NSObject,  NSURLSessionDataDelegate {
     
     private var tasks: Set<RinkuNetworkTask> = Set()
     
-    public func addRequest(request : NSURLRequest, completion : CompletionHandler, progress : ProgressHandler = {double in }) -> () {
+    public func addRequest(request : NSURLRequest, completion : CompletionHandler, progress : ProgressHandler? {
         
         var task = self.taskForRequest(request)
         
