@@ -13,5 +13,3 @@ FOUNDATION_EXPORT double RinkuVersionNumber;
 
 //! Project version string for Rinku.
 FOUNDATION_EXPORT const unsigned char RinkuVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <Rinku/PublicHeader.h>
