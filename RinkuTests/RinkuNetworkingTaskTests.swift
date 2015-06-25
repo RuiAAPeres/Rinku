@@ -9,29 +9,32 @@
 import XCTest
 @testable import Rinku
 
+let kGoogle = "www.google.com"
+let kYahoo = "www.yahoo.com"
+
 class RinkuNetworkingTaskTests: XCTestCase {
     
     func testEqualityShouldSucceedForSameURL() {
         
-        let task1 = RinkuNetworkTask(url: NSURL(string: "www.google.com")!)
-        let task2 = RinkuNetworkTask(url: NSURL(string: "www.google.com")!)
+        let task1 = RinkuNetworkTask(url: NSURL(string: kGoogle)!)
+        let task2 = RinkuNetworkTask(url: NSURL(string: kGoogle)!)
         
         XCTAssertEqual(task1, task2)
     }
     
     func testEqualityShouldFailForDifferentURL() {
         
-        let task1 = RinkuNetworkTask(url: NSURL(string: "www.google.com")!)
-        let task2 = RinkuNetworkTask(url: NSURL(string: "www.yahoo.com")!)
+        let task1 = RinkuNetworkTask(url: NSURL(string: kGoogle)!)
+        let task2 = RinkuNetworkTask(url: NSURL(string: kYahoo)!)
         
         XCTAssertNotEqual(task1, task2)
     }
     
     func testHashabilityOnURL() {
         
-        let task1 = RinkuNetworkTask(url: NSURL(string: "www.google.com")!)
-        let task2 = RinkuNetworkTask(url: NSURL(string: "www.google.com")!)
-        let task3 = RinkuNetworkTask(url: NSURL(string: "www.yahoo.com")!)
+        let task1 = RinkuNetworkTask(url: NSURL(string: kGoogle)!)
+        let task2 = RinkuNetworkTask(url: NSURL(string: kGoogle)!)
+        let task3 = RinkuNetworkTask(url: NSURL(string: kYahoo)!)
         
         var uniqueTasks : Set<RinkuNetworkTask> = Set(arrayLiteral: task1,task2)
         XCTAssert(uniqueTasks.count == 1)
@@ -42,7 +45,7 @@ class RinkuNetworkingTaskTests: XCTestCase {
     }
     
     func testAddHandlers() {
-        var task = RinkuNetworkTask(url: NSURL(string: "www.google.com")!)
+        var task = RinkuNetworkTask(url: NSURL(string: kGoogle)!)
         
         let completionHandler : CompletionHandler = { (status, data , error) in }
         let progressHandler : ProgressHandler = { (progress) in }
@@ -60,7 +63,7 @@ class RinkuNetworkingTaskTests: XCTestCase {
         var numberOfCompletions = 0
         let expectation = expectationWithDescription("Completion Expectation")
         
-        var task = RinkuNetworkTask(url: NSURL(string: "www.google.com")!)
+        var task = RinkuNetworkTask(url: NSURL(string: kGoogle)!)
         
         let completionHandler : CompletionHandler = { (status, data, error) -> () in
             
@@ -86,7 +89,7 @@ class RinkuNetworkingTaskTests: XCTestCase {
         var numberOfCompletions = 0
         let expectation = expectationWithDescription("Completion Expectation")
         
-        var task = RinkuNetworkTask(url: NSURL(string: "www.google.com")!)
+        var task = RinkuNetworkTask(url: NSURL(string: kGoogle)!)
         
         let completionHandler : CompletionHandler = { (status, data , error) in }
         let progressHandler : ProgressHandler = { (progress) in
