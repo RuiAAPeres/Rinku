@@ -14,6 +14,7 @@
 		B2D8A59E1B2BC7D400AB5B17 /* RinkuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A59D1B2BC7D400AB5B17 /* RinkuDelegate.swift */; };
 		B2D8A5A21B2BFFB300AB5B17 /* RinkuResourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5A11B2BFFB300AB5B17 /* RinkuResourceTests.swift */; };
 		C71B6F891B39DF8A00E18732 /* RinkuNetworkingTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B6F881B39DF8A00E18732 /* RinkuNetworkingTaskTests.swift */; };
+		C71B6F8B1B3B680F00E18732 /* RinkuDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B6F8A1B3B680F00E18732 /* RinkuDelegateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		B2D8A59D1B2BC7D400AB5B17 /* RinkuDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuDelegate.swift; sourceTree = "<group>"; };
 		B2D8A5A11B2BFFB300AB5B17 /* RinkuResourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuResourceTests.swift; sourceTree = "<group>"; };
 		C71B6F881B39DF8A00E18732 /* RinkuNetworkingTaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuNetworkingTaskTests.swift; sourceTree = "<group>"; };
+		C71B6F8A1B3B680F00E18732 /* RinkuDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuDelegateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				B2D8A5A11B2BFFB300AB5B17 /* RinkuResourceTests.swift */,
 				C71B6F881B39DF8A00E18732 /* RinkuNetworkingTaskTests.swift */,
+				C71B6F8A1B3B680F00E18732 /* RinkuDelegateTests.swift */,
 				B2D8A5901B2BACB200AB5B17 /* Supporting Files */,
 			);
 			path = RinkuTests;
@@ -240,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C71B6F8B1B3B680F00E18732 /* RinkuDelegateTests.swift in Sources */,
 				C71B6F891B39DF8A00E18732 /* RinkuNetworkingTaskTests.swift in Sources */,
 				B2D8A5A21B2BFFB300AB5B17 /* RinkuResourceTests.swift in Sources */,
 			);
