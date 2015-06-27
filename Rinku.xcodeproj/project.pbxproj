@@ -15,6 +15,7 @@
 		B2D8A5A21B2BFFB300AB5B17 /* RinkuResourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5A11B2BFFB300AB5B17 /* RinkuResourceTests.swift */; };
 		C71B6F891B39DF8A00E18732 /* RinkuNetworkingTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B6F881B39DF8A00E18732 /* RinkuNetworkingTaskTests.swift */; };
 		C71B6F8B1B3B680F00E18732 /* RinkuDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B6F8A1B3B680F00E18732 /* RinkuDelegateTests.swift */; };
+		C74392CB1B3CBCEC00F62A1D /* RinkuSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74392CA1B3CBCEC00F62A1D /* RinkuSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		B2D8A5A11B2BFFB300AB5B17 /* RinkuResourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuResourceTests.swift; sourceTree = "<group>"; };
 		C71B6F881B39DF8A00E18732 /* RinkuNetworkingTaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuNetworkingTaskTests.swift; sourceTree = "<group>"; };
 		C71B6F8A1B3B680F00E18732 /* RinkuDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuDelegateTests.swift; sourceTree = "<group>"; };
+		C74392CA1B3CBCEC00F62A1D /* RinkuSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RinkuSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				B2D8A5891B2BAC3F00AB5B17 /* RinkuResource.swift */,
 				B2D8A5951B2BB36C00AB5B17 /* RinkuNetworkTask.swift */,
 				B2D8A59D1B2BC7D400AB5B17 /* RinkuDelegate.swift */,
+				C74392CA1B3CBCEC00F62A1D /* RinkuSession.swift */,
 			);
 			path = Rinku;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			files = (
 				B2D8A5961B2BB36C00AB5B17 /* RinkuNetworkTask.swift in Sources */,
 				B2D8A59E1B2BC7D400AB5B17 /* RinkuDelegate.swift in Sources */,
+				C74392CB1B3CBCEC00F62A1D /* RinkuSession.swift in Sources */,
 				B2D8A58D1B2BAC3F00AB5B17 /* RinkuResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
